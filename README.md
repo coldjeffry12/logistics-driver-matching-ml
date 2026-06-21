@@ -9,6 +9,17 @@ drivers and ranks the best candidates for shipment orders.
 > data. It is not a production dispatch system and does not claim real company
 > data, production deployment, business impact, or operational adoption.
 
+## Live Demo and Repository
+
+- **GitHub repository:** [coldjeffry12/logistics-driver-matching-ml](https://github.com/coldjeffry12/logistics-driver-matching-ml)
+- **Live Streamlit demo:** [Open the public demo](https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app)
+- **Local FastAPI docs:** `http://127.0.0.1:8000/docs`
+- **Local Streamlit:** `http://localhost:8501`
+
+The live demo may take around one minute during the first recommendation
+because it may generate deterministic synthetic artifacts and train/load the
+model on first use.
+
 ## Recruiter Summary
 
 This repository demonstrates practical beginner-to-intermediate Machine
@@ -120,6 +131,7 @@ logistics-driver-matching-ml/
     ├── demo_script.md
     ├── final_application_pack.md
     ├── final_setup_checklist.md
+    ├── github_profile_text.md
     ├── github_upload_guide.md
     ├── interview_explanation.md
     ├── interview_questions_and_answers.md
@@ -380,21 +392,16 @@ Later requests reuse the cached recommender for that running instance.
 
 ## Deployment
 
-Current public-link status:
+The public Streamlit demo is deployed from this repository's `main` branch
+using `src/streamlit_app.py`:
 
-- Local FastAPI documentation: `http://127.0.0.1:8000/docs`
-- Local Streamlit interface: `http://localhost:8501`
-- GitHub: **To be added after repository upload**
-- Live demo: **To be added after Streamlit Cloud deployment**
+- [GitHub repository](https://github.com/coldjeffry12/logistics-driver-matching-ml)
+- [Public Streamlit demo](https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app)
 
-For Streamlit Community Cloud:
-
-1. Push the repository to GitHub.
-2. Create a Streamlit app from branch `main`.
-3. Set the main file path to `src/streamlit_app.py`.
-4. Submit the first recommendation and allow the synthetic artifact bootstrap
-   to complete.
-5. Replace the placeholders above with the real public links.
+The first recommendation on a fresh or restarted cloud instance may take
+around one minute while synthetic data and the model artifact are generated.
+This deployment remains an educational portfolio demonstration, not a
+production dispatch service.
 
 See the [Streamlit deployment guide](docs/streamlit_deployment_guide.md) for
 full instructions and troubleshooting.

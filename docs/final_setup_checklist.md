@@ -2,10 +2,9 @@
 
 Status meanings:
 
-- **Done** — verified locally in this preparation session.
-- **Not done yet** — depends on a remote service that has not been configured.
-- **Needs user action** — requires the repository owner to approve or supply
-  information.
+- **Done** — completed and verified during project setup.
+- **User maintenance** — an item to recheck if a public URL or deployment
+  configuration changes later.
 
 ## A. Local setup
 
@@ -36,49 +35,58 @@ Status meanings:
 - **Done:** Local Git repository initialized.
 - **Done:** Upload exclusions and staged files reviewed.
 - **Done:** Initial local commit created.
-- **Not done yet:** Public GitHub repository created.
-- **Needs user action:** Approve automatic repository creation or provide the
-  empty repository URL.
-- **Not done yet:** Remote `origin` added.
-- **Not done yet:** Branch pushed to GitHub.
+- **Done:** Public GitHub repository created.
+- **Done:** Remote `origin` points to
+  `https://github.com/coldjeffry12/logistics-driver-matching-ml.git`.
+- **Done:** Branch `main` pushed to GitHub.
+- **Done:** README displays correctly on GitHub.
+- **Done:** All five recruiter-facing screenshots display correctly.
 
 ## E. GitHub Actions
 
 - **Done:** Workflow is present and Linux-compatible.
 - **Done:** Workflow regenerates synthetic artifacts and runs pytest.
-- **Not done yet:** Workflow executed on GitHub.
-- **Needs user action:** Push the repository, then confirm the Actions run.
+- **Done:** Initial GitHub Actions workflow completed successfully.
 
 ## F. Streamlit Cloud deployment
 
 - **Done:** `.streamlit/config.toml` added.
 - **Done:** Main app path confirmed as `src/streamlit_app.py`.
 - **Done:** No secrets, private files, or environment variables are required.
-- **Not done yet:** App connected to the GitHub repository.
-- **Not done yet:** App deployed on Streamlit Community Cloud.
-- **Needs user action:** Deploy after the GitHub push and copy the public URL.
+- **Done:** App connected to the public GitHub repository.
+- **Done:** App deployed on Streamlit Community Cloud.
+- **Done:** App visibility set to public.
+- **Done:** App opens in an incognito/private browser without login.
+- **Done:** Public URL recorded:
+  `https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app`.
 
 ## G. README public links
 
 - **Done:** Local FastAPI and Streamlit URLs documented.
-- **Done:** Honest GitHub and live-demo placeholders documented.
-- **Needs user action:** Replace placeholders after upload and deployment.
+- **Done:** Public GitHub repository URL added.
+- **Done:** Public Streamlit URL added.
+- **Done:** Deployment placeholders removed.
 
 ## H. Resume update
 
 - **Done:** Resume-ready project wording exists in
   `docs/final_application_pack.md`.
-- **Needs user action:** Add the final GitHub URL to the resume.
-- **Needs user action:** Add the live-demo URL only after successful deployment.
+- **Done:** Final GitHub and live-demo links prepared for resume use.
+- **User maintenance:** Add the links to each submitted resume where space and
+  application format permit.
 
 ## I. JobStreet update
 
 - **Done:** JobStreet profile summary is prepared.
-- **Needs user action:** Paste the summary and add the final GitHub URL.
+- **Done:** Public project links are prepared.
+- **User maintenance:** Paste the selected summary and links into JobStreet.
 
 ## J. Recruiter sharing
 
 - **Done:** Recruiter message and interview explanations are prepared.
-- **Not done yet:** Public links are available.
-- **Needs user action:** Share only after checking the public GitHub repository
-  and Streamlit app while signed out.
+- **Done:** Final recruiter message contains both public links.
+- **Done:** Public GitHub repository and Streamlit demo are available.
+- **Done:** Final documentation update committed and pushed as part of the
+  public-link finalization.
+- **User maintenance:** Recheck both links while signed out before a major
+  application campaign.

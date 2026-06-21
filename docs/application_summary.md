@@ -1,5 +1,10 @@
 # Application summary
 
+## Public project links
+
+- GitHub: https://github.com/coldjeffry12/logistics-driver-matching-ml
+- Live demo: https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app
+
 ## JobStreet profile summary
 
 Software-development and application-support professional transitioning into
@@ -44,6 +49,9 @@ ranking metrics. The project uses synthetic data and is documented honestly as
 a prototype. I would appreciate the opportunity to discuss how my software
 support, testing, troubleshooting, and data-validation experience can transfer
 into an ML engineering role.
+
+GitHub: https://github.com/coldjeffry12/logistics-driver-matching-ml  
+Live demo: https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app
 
 ## Explaining the transition from Java/application support to ML
 

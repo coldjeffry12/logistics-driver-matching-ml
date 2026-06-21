@@ -2,6 +2,11 @@
 
 All wording below describes this repository as an early-career portfolio prototype built with synthetic data. It does not claim production deployment, real company data, operational adoption, or measured business impact.
 
+## Public Project Links
+
+- GitHub: https://github.com/coldjeffry12/logistics-driver-matching-ml
+- Live demo: https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app
+
 ## 1. Resume Project Section
 
 ### Logistics Driver Matching and Recommendation System
@@ -12,7 +17,7 @@ All wording below describes this repository as an early-career portfolio prototy
 - Engineered explainable feasibility, distance, capacity, reliability, response-time, pricing, and experience features while excluding post-outcome leakage fields.
 - Compared Logistic Regression and Random Forest models using shipment-grouped train, validation, and held-out test splits; evaluated classification and ranking performance with ROC-AUC, F1, Precision@5, NDCG@5, and top-five success rate.
 - Developed a top-five driver recommendation engine that applies vehicle, capacity, and availability rules before ranking feasible candidates with the selected Random Forest pipeline.
-- Exposed the prototype through FastAPI and Streamlit, saved the trained scikit-learn pipeline with joblib, and added eight pytest tests covering data, features, ranking, recommendations, model loading, and API integration.
+- Exposed the prototype through FastAPI and Streamlit, saved the trained scikit-learn pipeline with joblib, and added ten pytest tests covering data, features, ranking, recommendations, model loading, API integration, and deployment-time artifact readiness.
 
 ## 2. JobStreet Profile Summary
 
@@ -24,7 +29,12 @@ To strengthen my transition into machine learning engineering, I built a logisti
 
 ## 4. Recruiter Message
 
-Hello, I am an early-career Computer Science graduate applying for Machine Learning Engineer opportunities. My background includes Java application support, SQL/database validation, system testing, troubleshooting, and documentation. I recently completed a synthetic-data logistics driver matching portfolio prototype using Python, scikit-learn, SQLite, FastAPI, Streamlit, and pytest. I would appreciate your consideration for roles where I can contribute these foundations while continuing to grow in applied machine learning.
+Hi, I would like to share my Machine Learning portfolio project: a logistics driver matching and recommendation prototype using synthetic data. It demonstrates Python, SQL/SQLite, scikit-learn, feature engineering, ranking evaluation, FastAPI, Streamlit, and pytest testing.
+
+GitHub: https://github.com/coldjeffry12/logistics-driver-matching-ml  
+Live demo: https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app
+
+I am an early-career Computer Science graduate with experience in Java application support, SQL/database validation, system testing, troubleshooting, and documentation. I would appreciate consideration for roles where I can apply these foundations while continuing to grow in machine learning engineering.
 
 ## 5. Interview 60-Second Explanation
 
@@ -67,3 +77,34 @@ Synthetic-data ML portfolio prototype for logistics driver matching, top-five ra
 - streamlit
 - pytest
 - ml-portfolio
+
+## 12. LinkedIn Project Description
+
+I built a logistics driver matching and recommendation portfolio prototype
+using synthetic data. The project combines Python and SQL/SQLite data
+pipelines, explainable feature engineering, Logistic Regression and Random
+Forest comparison, shipment-grouped evaluation, and top-five ranking metrics.
+It includes a FastAPI service, public Streamlit demonstration, pytest coverage,
+and GitHub Actions. The project is intended to demonstrate early-career ML
+engineering skills and is not presented as a production system or evidence of
+real logistics business impact.
+
+GitHub: https://github.com/coldjeffry12/logistics-driver-matching-ml  
+Live demo: https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app
+
+## 13. One-line Project Pitch
+
+An end-to-end synthetic-data ML portfolio prototype that filters infeasible
+drivers and ranks the top five candidates for logistics shipments.
+
+## 14. Three Strongest Technical Selling Points
+
+1. Separates deterministic logistics feasibility rules from learned candidate ranking.
+2. Uses shipment-grouped train, validation, and held-out test splits with both classification and ranking metrics.
+3. Demonstrates a reproducible path from Python/SQLite data generation through model training, FastAPI, Streamlit, pytest, and GitHub Actions.
+
+## 15. Three Limitations to Explain Honestly
+
+1. The dataset and labels are synthetic, so the metrics do not establish performance on real logistics operations.
+2. The public Streamlit app is a portfolio demonstration with first-use training, not a production serving architecture.
+3. The project does not include real routing, timestamped point-in-time features, monitoring, fairness validation, security controls, or online experimentation.

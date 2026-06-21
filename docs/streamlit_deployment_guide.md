@@ -4,6 +4,19 @@ This guide deploys the Streamlit interface for the synthetic-data portfolio
 prototype. It does not deploy the FastAPI service and does not represent a
 production system.
 
+## Current public deployment
+
+- Live app: https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app
+- GitHub repository: https://github.com/coldjeffry12/logistics-driver-matching-ml
+- Branch: `main`
+- Main file path: `src/streamlit_app.py`
+- App visibility: Public
+- Access check: Opens in an incognito/private browser without requiring login
+
+The app is deployed from the GitHub repository
+`coldjeffry12/logistics-driver-matching-ml`, branch `main`, using
+`src/streamlit_app.py` as the main file.
+
 ## Deployment approach
 
 Generated CSV files, the SQLite database, reports, and the `joblib` model are
@@ -94,6 +107,22 @@ in `requirements.txt`.
 The first request on an empty instance runs deterministic synthetic data
 generation and model training. Wait about one minute and monitor the app log.
 This is a portfolio deployment compromise, not a production serving design.
+
+### App is sleeping
+
+Community Cloud may put an inactive app to sleep. Open the public URL and wait
+for the app to wake before submitting a recommendation.
+
+### App asks for sign-in
+
+Open the app's **Settings**, select **Sharing**, and confirm that the app is
+public. Verify the URL again in an incognito/private browser.
+
+### Recommendation fails
+
+Review the Streamlit Cloud logs for a missing package, failed synthetic
+artifact generation, or a scikit-learn/joblib compatibility issue. The first
+recommendation may take around one minute while artifacts are generated.
 
 ### Resource or timeout failure
 

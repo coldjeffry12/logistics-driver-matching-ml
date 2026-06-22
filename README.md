@@ -2,6 +2,14 @@
 
 ## Logistics Recommendation and Driver Matching ML System
 
+[![Tests](https://github.com/coldjeffry12/logistics-driver-matching-ml/actions/workflows/tests.yml/badge.svg)](https://github.com/coldjeffry12/logistics-driver-matching-ml/actions/workflows/tests.yml)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5%2B-F7931E?logo=scikitlearn&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.36%2B-FF4B4B?logo=streamlit&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-10%20tests-0A9EDC?logo=pytest&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://logistics-driver-matching-ml-aldmp73kjkhhj9jbuhl4hx.streamlit.app)
+
 An end-to-end machine learning portfolio prototype that filters infeasible
 drivers and ranks the best candidates for shipment orders.
 

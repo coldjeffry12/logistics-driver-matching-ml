@@ -1,6 +1,4 @@
-# Project Title
-
-## Logistics Recommendation and Driver Matching ML System
+# Logistics Driver Matching and Recommendation System
 
 [![Tests](https://github.com/coldjeffry12/logistics-driver-matching-ml/actions/workflows/tests.yml/badge.svg)](https://github.com/coldjeffry12/logistics-driver-matching-ml/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
@@ -138,6 +136,7 @@ logistics-driver-matching-ml/
     ├── audit_report.md
     ├── demo_script.md
     ├── final_application_pack.md
+    ├── final_project_pitch.md
     ├── final_setup_checklist.md
     ├── github_profile_text.md
     ├── github_upload_guide.md
@@ -449,7 +448,8 @@ generated datasets or model binaries.
 - Scores are not calibrated on real operational outcomes.
 - No traffic, weather, route restrictions, fairness audit, authentication,
   monitoring, drift detection, retraining service, or online experiment exists.
-- FastAPI and Streamlit are local demonstration surfaces.
+- FastAPI is a local demonstration service, and Streamlit is a public
+  portfolio demonstration rather than a production application.
 
 ## Future Improvements
 
@@ -477,12 +477,13 @@ Supporting material:
 
 - [Technical audit](docs/audit_report.md)
 - [Interview explanations](docs/interview_explanation.md)
-- [40 project interview questions](docs/interview_questions_and_answers.md)
+- [43 project interview questions](docs/interview_questions_and_answers.md)
 - [Practical demo script](docs/demo_script.md)
 - [Job requirement mapping](docs/job_match_analysis.md)
 - [Resume and LinkedIn wording](docs/resume_bullets.md)
 - [Application summaries](docs/application_summary.md)
 - [Final application copy-paste pack](docs/final_application_pack.md)
+- [Short final project pitch](docs/final_project_pitch.md)
 - [GitHub upload guide](docs/github_upload_guide.md)
 - [Streamlit deployment guide](docs/streamlit_deployment_guide.md)
 - [Final setup checklist](docs/final_setup_checklist.md)

@@ -54,7 +54,8 @@ ROC-AUC 0.714, F1 0.547, Precision@5 0.436, and NDCG@5 0.656.
 The saved `joblib` pipeline is loaded by the recommender. For a new shipment,
 the system computes the same features, filters infeasible drivers, predicts
 scores, sorts them, and returns the top five with rule-based explanations.
-FastAPI exposes the workflow as an API, while Streamlit provides a local demo.
+FastAPI exposes the workflow as an API, while Streamlit provides a public
+portfolio demo.
 
 ## Simple recruiter explanation
 
@@ -219,6 +220,31 @@ the choice between two models. I also learned to separate hard constraints
 from learned preferences, keep preprocessing inside pipelines, preserve a
 true test set, test business assumptions, and communicate corrected metrics
 honestly.
+
+## What I personally built
+
+I built the scoped prototype workflow: synthetic data generation, CSV and
+SQLite storage, SQL joins, feature engineering, model comparison, grouped
+evaluation, recommendation logic, FastAPI endpoints, Streamlit interface,
+tests, and documentation. I used AI-assisted coding as a development tool, but
+I reviewed the design, ran the project, investigated the inflated first
+result, corrected the evaluation, and prepared the explanations and
+limitations. I describe this as portfolio work, not professional production
+ML ownership.
+
+## What `driver_id` means
+
+`driver_id` is a synthetic identifier such as `DRV-0111`. It links a generated
+driver record to candidate matches and recommendations. It is not a real
+person, employee number, account, or customer identifier.
+
+## My current gaps
+
+My main gaps are professional production ML experience, real timestamped
+logistics data, cloud model operations, monitoring, fairness evaluation, and
+online experimentation. I can explain the prototype and its engineering
+choices, but I would seek guidance for production architecture and
+business-critical model decisions.
 
 ## How this connects to a Machine Learning Engineer job
 

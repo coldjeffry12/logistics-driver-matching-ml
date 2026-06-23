@@ -2,7 +2,9 @@
 
 ## Overall assessment
 
-Score after remediation: **86/100**.
+Current status: the material findings below were remediated, and the project
+was subsequently re-tested, deployed as a public portfolio demo, and prepared
+for recruiter review.
 
 The project is suitable for an early-career Machine Learning Engineer portfolio
 when presented explicitly as a synthetic-data prototype. Its strongest aspect
@@ -80,7 +82,9 @@ They do not estimate performance on a real logistics marketplace.
 - Predicted probabilities are not calibrated against real outcomes.
 - There is no temporal split, traffic data, fairness analysis, monitoring, or
   online experiment.
-- The UI and API are local demonstration surfaces.
+- The API remains a local demonstration service. Streamlit is publicly
+  accessible, but it remains a portfolio demonstration rather than a
+  production application.
 
 ## Resume decision
 

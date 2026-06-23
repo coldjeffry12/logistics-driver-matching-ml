@@ -212,15 +212,16 @@ values, urgency options, and route consistency.
 ## 35. What does the Streamlit demo provide?
 
 It provides a shipment input form, top-five score cards, a score chart, a
-candidate table, and plain-language reasons. It is intended for a local
-portfolio demonstration.
+candidate table, and plain-language reasons. It is deployed as a public
+portfolio demonstration, not a production dispatch application.
 
 ## 36. What tests did you write?
 
 The tests cover generated schemas, successful-label constraints, engineered
 features, missing-value behavior, ranking metric definitions, recommendation
 ordering and score bounds, impossible matches, saved artifact metadata, and
-API requests.
+API requests. The suite currently contains 10 tests, including deployment-time
+artifact readiness.
 
 ## 37. Why did you not use deep learning?
 
@@ -246,3 +247,25 @@ I learned that model quality depends on candidate definition and evaluation
 design, not only model choice. I also learned to separate hard rules from
 learned ranking, contain preprocessing inside pipelines, preserve a true test
 set, and communicate limitations honestly.
+
+## 41. What is `driver_id`?
+
+It is a synthetic identifier such as `DRV-0111` for one generated driver
+record. It lets the data pipeline, recommendation output, and demo refer to
+the same candidate. It does not identify a real person or company driver.
+
+## 42. What did you personally build?
+
+I built and reviewed the scoped portfolio workflow: synthetic data generation,
+SQLite and SQL processing, feature engineering, model comparison, grouped
+evaluation, recommendation logic, FastAPI, Streamlit, tests, and
+documentation. I used AI-assisted coding as a tool, then ran, audited,
+debugged, and explained the system. I do not present this as professional
+production ML ownership.
+
+## 43. What are your current gaps?
+
+I do not yet have professional experience operating production ML systems. I
+also need more experience with real timestamped data, cloud ML infrastructure,
+monitoring, fairness analysis, and online experiments. This project shows my
+current foundations and how I reason about those next steps.

@@ -43,6 +43,10 @@ st.title("🚚 Logistics Recommendation & Driver Matching")
 st.caption(
     "Portfolio prototype using synthetic data and a scikit-learn matching model."
 )
+st.info(
+    "First cloud recommendation: allow about one minute if synthetic data and "
+    "model artifacts need to be generated."
+)
 
 with st.sidebar:
     st.header("About")
@@ -136,6 +140,10 @@ if submitted:
         st.stop()
 
     st.subheader("Top recommendations")
+    st.caption(
+        "Driver IDs such as DRV-0111 are synthetic identifiers created for "
+        "this portfolio dataset."
+    )
     result_frame = pd.DataFrame(recommendations)
     metrics = st.columns(min(5, len(result_frame)))
     for position, (_, recommendation) in enumerate(result_frame.iterrows()):

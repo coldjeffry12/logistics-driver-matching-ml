@@ -43,13 +43,12 @@ unobserved effects prevent the target from being perfectly deterministic.
 10. Evaluate once on the untouched test set and save with `joblib`.
 11. Serve recommendations through FastAPI and Streamlit.
 
-## Features
+## Features and business rules
 
-The model uses:
+The model uses 12 pre-match inputs:
 
-- pickup distance score
-- exact vehicle-type and capacity checks as hard rules
-- capacity utilization as a model input
+- pickup-distance score
+- capacity utilization
 - normalized rating
 - availability
 - offered-price efficiency
@@ -57,9 +56,13 @@ The model uses:
 - response-time quality
 - urgency/response compatibility
 - historical success rate
-- pre-match estimated margin for reporting
 - route distance
 - completed-job experience
+
+Exact vehicle type, sufficient capacity, and non-offline status are enforced
+as deterministic eligibility rules before model scoring. Estimated margin is
+retained for reporting only because it overlaps strongly with price
+efficiency.
 
 These features are deliberately understandable enough to discuss in an
 early-career interview.

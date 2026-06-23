@@ -70,11 +70,13 @@ and route consistency. The recommendation response has a typed schema.”
 
 ## How to explain Streamlit
 
-Open the Streamlit page:
+Open the public Streamlit page:
 
 “The demo lets a user enter shipment details and returns the top five feasible
 drivers as score cards, a chart, a table, and plain-language reasons. It is a
-local demonstration surface, not a production application.”
+public portfolio demonstration, not a production application. On a fresh
+cloud instance, the first recommendation may take around one minute while
+synthetic artifacts are generated.”
 
 ## How to explain the recommendation result
 
@@ -82,6 +84,12 @@ local demonstration surface, not a production application.”
 offline drivers. It computes the same feature definitions used for training,
 loads the saved pipeline, predicts one probability per remaining driver, sorts
 the scores, and returns the top five.”
+
+If asked about the IDs:
+
+“A value such as `DRV-0111` is a synthetic driver identifier used to connect
+the generated driver record to its recommendation. It does not represent a
+real person.”
 
 ## How to answer why the model is not perfect
 
